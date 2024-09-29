@@ -1,0 +1,323 @@
+body {  
+    height: 100vh;
+    font-weight: 400;
+    color: #333;
+    cursor:grab;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --red:#006400;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--red);
+    padding:10px;
+}
+
+/*Navigation butttons*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+/*
+nav ul li {
+    margin-left: 20px;
+}
+*/
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #006400;
+    border-radius: 5px;
+}  
+
+/* Heading*/
+.logo{
+    font-family: "Honk", system-ui;
+    font-size: 3vw;
+    white-space:nowarp;
+    color: white;
+    padding-left: 10px;
+}
+
+/*welcome to Kerala*/
+.wel{
+    background-image:url(images/7396eab97e3fc108d8425676df1caf61.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome{
+flex: 1;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.btn{
+    background-color: #fff;
+    color: #006400;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.Explore{
+    color: white;
+    display: flex;
+    background: rgb(0 0 0 / 74%);
+    backdrop-filter: blur(4px);
+    padding: 30px 40px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.Explore p{
+    
+    align-self:center;
+    font-size: 2em;
+    margin: 20px;
+}
+
+.kerala{
+    font-family:  "Bungee Spice", sans-serif;    
+    text-align: center;
+    font-size: 4em;
+}
+
+main .btn:hover{
+    background-color:var(--red);
+    color: white;
+}
+
+/*About*/
+#art{
+    background-color: white;
+    text-align: center;
+}
+
+#art h2{
+    color:white
+}
+
+#art p{
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Attraction*/
+#att{
+    display: flex !important;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+h2{
+    padding: 5px;
+    height: 40px;
+    background-color: #006400;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.img{
+    background-color: white;
+    text-align: center;
+    margin: 50px;
+    width: 400px;    
+}
+
+.img img{
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+    box-shadow:rgb(0, 0, 0) 5px 5px 10px;
+}
+
+.img h3{
+    color: #006400;
+    margin: 20px 0 10px;
+}
+
+.img p{
+    font-size: 1.4rem;
+    padding: 0 15px 20px;
+    color: #555;
+}
+
+.img:hover{
+    transform: scale(1.1);
+}
+
+/*Gallery*/
+#gall{
+    background-color: white;
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img:hover{
+    transform: scale(1.01);
+}
+
+.gallery img{
+    width: 45%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px;
+}
+
+.gall h2{
+    margin-top: 5px;
+}
+
+/*History of Kerala */
+.history{
+    display: flex;
+    position:relative;
+    top:20px;
+} 
+
+.history h2{
+    background-color: #006400;
+    color: white;
+    text-align: center;
+}
+
+.history p{
+    font-size: 1.3rem;
+    color:black;
+    text-align: justify;
+    text-indent: 10%;
+    padding: 50px;
+    margin: 0px;
+}
+
+.adds{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 840px;
+}
+
+.adds img{
+    height: 840px;
+    width: 277px;
+}
+
+/*Advrnture sport*/
+.column p{
+    font-size: 20px;
+}
+
+.Places img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px;
+}
+
+.Places h3{
+    background-color: #C0EBA6;
+    border-radius: 25px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.column{
+text-align: justify;
+   column-count:3;
+   column-gap: 30px;
+   column-rule: solid 2px #006400;
+   margin: 10px;
+}
+
+/*Contact*/
+footer {
+    background-color: #006400;
+    color: white;
+}
+.foot{
+    display: flex;
+    background-color:#C0EBA6;
+    height: 160px;
+    color: black;
+    justify-content: space-evenly;
+}
+
+.foot .abcd{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: larger;
+    color:#3B3030 ;
+}
+.foot li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    color: #795757;
+}
+
+.foot ul{
+    margin-top:30px;
+}
+
+footer p {
+    text-align: justify;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+.www{
+    background-color:#C0EBA6;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.www span{
+    color: grey;
+}
+
+footer a{
+    color: black;
+}
